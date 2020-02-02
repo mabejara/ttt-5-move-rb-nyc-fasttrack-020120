@@ -7,3 +7,22 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def get_move
+  puts "Please enter 1-9"
+  type = gets.strip
+end
+
+def input_to_index (input)
+  input.to_i-1
+end
+
+def move(board, index, token="X")
+  board[index] = token
+end
+
+
+#def get_move
+#  puts "Please enter 1-9"
+#  input.gets.strip
+#  input.to_i-1
+#end
